@@ -22,11 +22,6 @@ nav > ul > li {
   color: white;
   cursor: pointer;
 }
-nav > ul > li:hover {
-  background: #48d9bf;
-  border-radius: 0px;
-}
-
 ul.drop-menu {
   position: absolute;
   top: 100%;
@@ -36,13 +31,12 @@ ul.drop-menu {
 }
 ul.drop-menu li {
   background: #bda53f;
-  color: rgba(255, 255, 255, 0.7);
 }
 ul.drop-menu li:hover {
   background: #998633;
 }
 ul.drop-menu li:last-child {
-  border-radius: 0px 0px 5px 5px;
+  border-radius: 0px 0px 30px 30px;
 }
 
 ul.drop-menu li {
@@ -54,6 +48,12 @@ li:hover > ul.drop-menu li {
 }
 
 /* ----------- Menu uno ------------- */
+ul.drop-menu.menu-uno li {
+  background: #bb72cf;
+}
+ul.drop-menu.menu-uno li:hover {
+  background: #955ba5;
+}
 
 li:hover > ul.drop-menu.menu-uno li{
   opacity: 0;
@@ -71,28 +71,53 @@ li:hover > ul.drop-menu.menu-uno li{
 }
 
 #uno{
-  background: #bca43f;
+  background: #955ba5;
   border-radius: 5px 0 0 0;
 }
-#dos{
-  background: #bc3fa6;
-}
-#tres{
-  background: #3f55bc;
-}
-#cuatro{
-  background: #3fbc49;
-  border-radius: 0 5px 0 0;
-}
 #uno:hover{
-  background: #d6bb48;
+  background: #bb72cf;
+}
+
+
+/* ----------- Menu dos ------------- */
+ul.drop-menu.menu-dos li {
+  background: #72cfab;
+}
+ul.drop-menu.menu-dos li:hover {
+  background: #5ba689;
+}
+#dos{
+  background: #5ba689;
 }
 #dos:hover{
-  background: #d949c0;
+  background: #72cfab;
+}
+
+/* ----------- Menu tres ------------- */
+ul.drop-menu.menu-tres li {
+  background: #7279cf;
+}
+ul.drop-menu.menu-tres li:hover {
+  background: #5c5ba6;
+}
+#tres{
+  background: #5c5ba6;
 }
 #tres:hover{
-  background: #4861d6;
+  background: #7279cf;
+}
+
+/* ----------- Menu cuatro ------------- */
+ul.drop-menu.menu-cuatro li {
+  background: #f0ee51;
+}
+ul.drop-menu.menu-cuatro li:hover {
+  background: #dedc4b;
+}
+#cuatro{
+  background: #dedc4b;
+  border-radius: 0 5px 0 0;
 }
 #cuatro:hover{
-  background: #48d653;
+  background: #f0ee51;
 }
