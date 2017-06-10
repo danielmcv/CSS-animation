@@ -54,10 +54,55 @@ ul.drop-menu.menu-uno li {
 ul.drop-menu.menu-uno li:hover {
   background: #955ba5;
 }
-
 li:hover > ul.drop-menu.menu-uno li{
   opacity: 0;
-  animation: menuuno 0.5s ease-in-out forwards;
+}
+
+li:hover > ul.drop-menu.menu-uno li:nth-child(1){
+  opacity: 0;
+  animation: menuuno 0.3s 0s ease-in-out forwards;
+}
+@keyframes menuuno{
+  0%{
+    opacity: 0;
+    transform: rotateY(-90deg) translateY(10px);
+  }
+  100%{
+    opacity: 1; 
+    transform: rotateY(0deg) translateY(0px);
+  }
+}
+li:hover > ul.drop-menu.menu-uno li:nth-child(2){
+  opacity: 0;
+  animation: menuuno 0.3s 0.15s ease-in-out forwards;
+}
+@keyframes menuuno{
+  0%{
+    opacity: 0;
+    transform: rotateY(-90deg) translateY(10px);
+  }
+  100%{
+    opacity: 1; 
+    transform: rotateY(0deg) translateY(0px);
+  }
+}
+li:hover > ul.drop-menu.menu-uno li:nth-child(3){
+  opacity: 0;
+  animation: menuuno 0.3s 0.3s ease-in-out forwards;
+}
+@keyframes menuuno{
+  0%{
+    opacity: 0;
+    transform: rotateY(-90deg) translateY(10px);
+  }
+  100%{
+    opacity: 1; 
+    transform: rotateY(0deg) translateY(0px);
+  }
+}
+li:hover > ul.drop-menu.menu-uno li:nth-child(4){
+  opacity: 0;
+  animation: menuuno 0.3s 0.45s ease-in-out forwards;
 }
 @keyframes menuuno{
   0%{
@@ -88,16 +133,58 @@ ul.drop-menu.menu-dos li:hover {
 }
 li:hover > ul.drop-menu.menu-dos li{
   opacity: 0;
-  animation: menudos 0.5s ease-in-out forwards;
+  transform-origin: top center;
+}
+li:hover > ul.drop-menu.menu-dos li:nth-child(1){
+  animation: menudos 0.3s 0s ease-in-out forwards;
 }
 @keyframes menudos{
   0%{
     opacity: 0;
-    transform: rotateX(-90deg) translateX(10px);
+    transform: rotateX(-90deg);
   }
   100%{
     opacity: 1; 
-    transform: rotateX(0deg) translateX(0px);
+    transform: rotateX(0deg);
+  }
+}
+li:hover > ul.drop-menu.menu-dos li:nth-child(2){
+  animation: menudos 0.3s 0.15s ease-in-out forwards;
+}
+@keyframes menudos{
+  0%{
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+  100%{
+    opacity: 1; 
+    transform: rotateX(0deg);
+  }
+}
+li:hover > ul.drop-menu.menu-dos li:nth-child(3){
+  animation: menudos 0.3s 0.3s ease-in-out forwards;
+}
+@keyframes menudos{
+  0%{
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+  100%{
+    opacity: 1; 
+    transform: rotateX(0deg);
+  }
+}
+li:hover > ul.drop-menu.menu-dos li:nth-child(4){
+  animation: menudos 0.3s 0.45s ease-in-out forwards;
+}
+@keyframes menudos{
+  0%{
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+  100%{
+    opacity: 1; 
+    transform: rotateX(0deg);
   }
 }
 #dos{
